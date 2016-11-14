@@ -1,0 +1,240 @@
+/* Generic css file to hold styling */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+}
+
+/* Remove generic styling */
+a, a:visited {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+}
+
+a:link:active, a:visited:active {
+  color: inherit;
+}
+
+/* Define all specific divs here */
+
+body {
+  color: #262626;
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: #cc3300;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .header-title {
+  width: 80%;
+  font-size: 5em;
+  text-align: center;
+}
+
+header .header-smaller {
+  font-size: 3.5em;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main input {
+  width: 90%;
+  padding: 0.25em 0.25em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: xx-large;
+}
+
+main .cancel {
+  width: 80%;
+}
+
+main .map {
+
+}
+
+main .map img {
+  border-style: solid;
+  border-color: #009900;
+  border-width: 3px;
+  border-bottom-width: 0px;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+main .map .status {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid;
+  border-color: #009900;
+  border-width: 3px;
+  border-top-width: 0px;
+  font-size: 2em;
+  text-align: center;
+  background-color: #009900;
+}
+
+main .alert-desc {
+  width: 80%;
+  margin: auto;
+  margin-top: 0.25em;
+  padding: auto;
+  text-align: center;
+  font-size: 3em;
+  background-color: #cc3300;
+}
+
+main .directions {
+  padding: inherit;
+  list-style-type: none;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.25em;
+}
+
+main .directions .dir-title {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #009900;
+}
+
+main .directions .dir {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #009900;
+  border-top-width: 0px;
+}
+
+main #incident {
+  width: 90%;
+  text-align: center;
+  background-color: #cc3300;
+  border-style: solid;
+  border-bottom-width: 0px;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+main .instructions {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-style: solid;
+  font-size: 2em;
+}
+
+main .instructions .instr {
+  width: 100%;
+  text-align: center;
+  padding: 25% 0 0 0;
+}
+
+main .instructions #instr-1 {
+  background-color: #99ccff;
+}
+
+main .instructions #instr-2 {
+  background-color: #ffcccc;
+}
+
+main .instructions #instr-3 {
+  background-color: #d9ffb3;
+}
+
+main .situation {
+  width: 80%;
+  border-with: 1px;
+  border-color: #b32d00;
+  border-style: solid;
+  background-color: #cc3300;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main .assist {
+  width: 80%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: auto;
+  text-align: center;
+  font-size: 3em;
+  background-color: #009900;
+  animation: blinker 2s linear infinite;
+}
+
+main .alert {
+  width: 90%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: center;
+  font-size: 3em;
+  background-color: #cc3300;
+  animation: blinker 2s linear infinite;
+}
+
+main .en-route {
+  width: 90%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: solid #006600 2px;
+  background-color: #009900;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Define all generic classes here */
+
+.hidden {
+	display: none;
+}
+
+/* Define all other styling here */
+
+@keyframes blinker {
+  50% {opacity: 0.5;}
+}
