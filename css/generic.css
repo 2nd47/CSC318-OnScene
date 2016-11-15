@@ -152,6 +152,7 @@ main .instructions {
 }
 
 main .instructions .instr {
+  display: block;
   width: 100%;
   text-align: center;
   padding: 22.5% 0 0 0;
