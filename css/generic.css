@@ -154,7 +154,7 @@ main .instructions {
 main .instructions .instr {
   width: 100%;
   text-align: center;
-  padding: 25% 0 0 0;
+  padding: 22.5% 0 0 0;
 }
 
 main .instructions #instr-1 {
@@ -167,6 +167,62 @@ main .instructions #instr-2 {
 
 main .instructions #instr-3 {
   background-color: #d9ffb3;
+}
+
+main .instr-img .instr-title {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #262626;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  background-color: #cc3300;
+}
+
+main .instr-img {
+  width: 80%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #262626;
+}
+
+main .instr-img img {
+  width: 100%;
+  height: auto;
+}
+
+main .instr-directions {
+  padding: inherit;
+  list-style-type: none;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: #cc3300;
+}
+
+main .instr-img .dir-title {
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: #b32d00;
+}
+
+main .instr-img .instr-dir {
+  border-top-width: 0px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+main .instr-img .instr-dir:first-child {
+  border-top-width: 1px;
+}
+
+main .prev-or-next {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: xx-large;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 main .situation {
